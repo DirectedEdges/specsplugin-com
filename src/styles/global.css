@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Hide the mobile "On this page" TOC bar; keep the desktop right-side TOC */
+mobile-starlight-toc {
+  display: none;
+}
+
+/* Hide the "On this page" heading in the desktop TOC */
+#starlight__on-this-page {
+  display: none;
+}
+
+/* Match sidebar group headings to link font size */
+.sidebar-content .group-label span {
+  font-size: var(--sl-text-sm) !important;
+}

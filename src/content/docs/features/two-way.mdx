@@ -1,0 +1,28 @@
+---
+title: Two Way Comparisons
+description: Compare all attributes and properties across nested instances using every combination of two properties.
+---
+
+import { Badge } from '@astrojs/starlight/components';
+
+<Badge text="Pro" variant="tip" />
+
+The plugin enables comparisons of all attributes and properties across nested instances using every combination of two properties.
+
+## Why use this feature
+
+The default Properties section compares variants directionally from the selected item's configuration. For a Button with variant (filled, outline, text), state (default, hover, active), and size (small, medium, large), the default view only compares one property at a time while holding others constant. This omits numerous combinations (e.g., state comparisons when variant is outline, size comparisons when state is hover).
+
+## What is included
+
+Two-way comparisons display artwork for every combination of two properties in hierarchical format.
+
+## How it works
+
+With two-way settings enabled and one component or instance containing two or more variant properties selected, users can select properties in separate menus. Based on the configured property pair, the plugin will:
+
+- Show the two-way comparison as the initial Properties section
+- Establish subsections for each option of the first property
+- Build exhibits for every option of the second property within each subsection
+- Contrast layers across all options within rows
+- Contrast layers of identical options across rows
